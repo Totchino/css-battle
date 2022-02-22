@@ -1,0 +1,59 @@
+<body>
+    <div entier>
+        <div entierhaut>
+            <div rect></div>
+            <div rect2></div>
+            <div rect3></div>
+            <div rect4></div>
+        <div>    
+    </div>
+</body>
+
+<style>
+    body {
+    background:#6592CF;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div[entier] {
+      width: 400px;
+      height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div[entierhaut] {
+    width: 200px;
+    height: 200px;
+      grid-column: 1;
+      grid-column-end: 2;
+      display: contents;
+  }
+  div[rect] {
+      width: 200px;
+      height: 200px;
+      background-color: orangered;
+      border-radius: 100% 0 0 0;
+  }
+  div[rect2] {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 0 100% 0 0;
+}
+
+div[rect3] {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(97, 76, 194, 0.829);
+    border-radius: 0 0 0 100%;
+}
+div[rect4] {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(251, 255, 0);
+    border-radius: 0 0 100% 0;
+}
+</style>
